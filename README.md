@@ -68,11 +68,27 @@ $ ps ax |grep webiopi
 ```
 
 
-## web browser から接続
+## web browser から WebIOPi への接続方法
 web browser から "http://[raspberry pi の ip address]:8000/" にアクセス.
 パスワードを要求されるが、デフォルトでは、
 - username : webiopi  
 - password : raspberry
 
 
+## Programing Tutorial
+### WebIOPi の処理フロー
+- 参考 : <http://webiopi.trouch.com/Tutorial_Basis.html>
 
+WebIOPiには、HTMLリソースとREST APIの両方を提供するHTTPサーバーが含まれている。  
+ウェブブラウザは、まずHTMLファイルをロードし、そこに含まれているJavascriptがUIを制御および更新するためにREST APIへの非同期呼び出しを行う。
+```
+[Web browser]                                                                     [WebIOPi]
+http://<raspberryPi's ip>:8000/ にアクセス   ---- GET index.html ------------->   
+                                             <--- index.html     --------------
+
+index.html の読み込み                        ---- GET script.js  ------------->
+                                             <--- script.js      --------------
+
+script.js が動作                             ---- GET or POST , REST API ----->  
+                                             <--- Some Response from WebIOPi --
+```
