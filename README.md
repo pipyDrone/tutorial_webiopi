@@ -15,10 +15,12 @@ $ cat /etc/issue
 Raspbian GNU/Linux 8 \n \l
 ```
 
+---
 2. WebIOPiのダウンロード
 <http://sourceforge.net/projects/webiopi/files/WebIOPi-0.7.1.tar.gz/download>にアクセスすると、downloadが始まる.
 
 
+---
 3. インストール
 ```
 $ cd	###上のファイルをダウンロードした場所に移動する
@@ -29,6 +31,7 @@ $ patch -p1 -i webiopi-pi2bplus.patch
 $ sudo ./setup.sh
 ```
 
+---
 4. unit file のダウンロード
 ```
 $ cd 
@@ -36,12 +39,13 @@ $ wget https://raw.githubusercontent.com/neuralassembly/raspi/master/webiopi.ser
 $ sudo mv webiopi.service /etc/systemd/system/
 ```
 
-
+---
 5. WebIOPiの起動
 ```
 $ sudo /etc/init.d/webiopi start
 ```
 
+---
 6. 起動確認
 ```
 $ ps ax |grep webiopi
@@ -50,11 +54,13 @@ $ ps ax |grep webiopi
 ログファイルは、/var/log/webiopi
 
 
+---
 7. WebIOPiの停止
 ```
 $ /etc/init.d/webiopi stop
 ```
 
+---
 8. 停止確認
 ```
 $ ps ax |grep webiopi
