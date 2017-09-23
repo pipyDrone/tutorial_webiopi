@@ -76,7 +76,7 @@ web browser から "http://[raspberry pi の ip address]:8000/" にアクセス.
 
 
 ## Programing Tutorial
-### WebIOPi の処理フロー
+1. WebIOPi の処理フロー
 - 参考 : <http://webiopi.trouch.com/Tutorial_Basis.html>
 
 WebIOPiには、HTMLリソースとREST APIの両方を提供するHTTPサーバーが含まれている。  
