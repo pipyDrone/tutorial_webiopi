@@ -71,10 +71,8 @@ $ ps ax |grep webiopi
 ## web browser から接続
 web browser から "http://[raspberry pi の ip address]:8000/" にアクセス.
 パスワードを要求されるが、デフォルトでは、
-	- username
-		- webiopi
-	- password
-		- raspberry
+	- username : webiopi
+	- password : raspberry
 
 
 
