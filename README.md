@@ -51,7 +51,7 @@ $ sudo /etc/init.d/webiopi start
 $ ps ax |grep webiopi
 ### これでgrep以外のプロセスが見えれば良い.
 ```
-ログファイルは、/var/log/webiopi
+ログファイルは、/var/log/webiopi 。起動しなかったり動作がおかしかったらこのファイルをtail -fしてみると良い。
 
 
 ---
